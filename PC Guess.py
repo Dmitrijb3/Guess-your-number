@@ -3,7 +3,7 @@ import random
 def pc_guess(num):
     low = 0
     high = 200
-    guess = 100  #This is a starting number
+    guess = high/2  #This is a starting number
     while guess != num:  #while - repeat the execution of the code until the right answer will be found / != not equal
         guess = (low+high)//2  #Instead of checking all numbers from 0 to 200, first guess is 100 and is divided in half between next low or high numbers
         print("PC tries to guess...", guess)
